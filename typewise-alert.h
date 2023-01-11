@@ -65,9 +65,10 @@ extern BreachType breachType;
 ({printf("%s\n",EMAIL_ID);                                              \
 if (TOO_LOW == breachType)                                              \
 {printf("Hi, the temperature is too low\n");}                           \
-else if (TOO_HIGH == breachType)                                        \                        
-{printf("Hi, the temperature is too high\n");}                           \
-else{/* nothing to do */                                                \
+else if(TOO_HIGH == breachType)                                         \                        
+{printf("Hi, the temperature is too high\n");}                          \
+else                                                                    \
+{/* nothing to do */                                                    \
 }                                                                       \
 })                                                                      \
 
